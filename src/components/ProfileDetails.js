@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styles from "./ProfileDetails.module.scss";
-import profilePicture from "../images/pro2.jpeg";
 import Typewriter from "./TypingEffect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
-  faFacebookF,
   faInstagram,
-  faLinkedin,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,7 +18,7 @@ const ProfileDetails = ({ activeTheme }) => {
     <div className={styles.profileDetails}>
       <div className={styles.outerContainer}>
       <div className={styles.profilePictureContainer}>
-        <div class={styles.profilePicture}></div>
+        <div className={styles.profilePicture}></div>
       </div>
 
       {/* Add your portfolio details here */}

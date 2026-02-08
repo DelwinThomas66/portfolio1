@@ -35,7 +35,6 @@ const ThemeToggle = ({ activeTheme }) => {
         zIndex: 99,
         width: 60, // assuming the unit is pixels
         height: 50, // assuming the unit is pixels
-        display: "flex",
         alignItems: "center",
         justifyContent: "center",
         color: "#000",
@@ -48,7 +47,7 @@ const ThemeToggle = ({ activeTheme }) => {
         transform: "translateY(-50%)",
         borderRadius: "30px 0 0 30px",
         border: "none",
-        display:size[0]<1125&& 'none',
+        display: size[0] < 1125 ? "none" : "flex",
       }}
     >
       {theme === "light" ? (

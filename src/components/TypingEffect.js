@@ -30,7 +30,7 @@ const Typewriter = ({ text, delay, infinite }) => {
       clearTimeout(timeout);
       clearInterval(cursorInterval);
     };
-  }, [currentIndex, delay, infinite, text]);
+  }, [currentIndex, delay, infinite, text, tempText]);
 
   return (
     <span className={styles.typeWriter}>

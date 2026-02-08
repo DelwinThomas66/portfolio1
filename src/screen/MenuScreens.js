@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import ProfileDetails from "../components/ProfileDetails";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import ContactInfo from "../components/ContactInfo";
 
 import styles from "./MenuScreen.module.scss";
 const MenuScreen = () => {

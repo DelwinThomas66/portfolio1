@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Card.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {  faTimes } from "@fortawesome/free-solid-svg-icons";
+import {  faTimes, faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
-const Card = ({ imageUrl, heading, description, title, date, content,modalIndicator }) => {
+const Card = ({ imageUrl, heading, description, title, date, content, modalIndicator, projectUrl }) => {
   const [showModal, setShowModal] = useState(false);
+
+  const resolvedImageUrl =
+    typeof imageUrl === "string" &&
+    (imageUrl.startsWith("http") ||
+      imageUrl.startsWith("data:") ||
+      imageUrl.startsWith("/"))
+      ? imageUrl
+      : `${process.env.PUBLIC_URL}/${imageUrl}`;
 
   const handleCardClick = () => {
     setShowModal(true);
@@ -23,7 +31,7 @@ const Card = ({ imageUrl, heading, description, title, date, content,modalIndica
       document.body.style.overflow = 'auto';
     }
     modalIndicator(showModal)
-  },[showModal])
+  },[showModal, modalIndicator])
 
   return (
     <div className={styles.card} onClick={handleCardClick}>
@@ -31,7 +39,7 @@ const Card = ({ imageUrl, heading, description, title, date, content,modalIndica
         <div className={styles.header}>
           <h2 className={styles.heading}>{heading}</h2>
         </div>
-        <img src={imageUrl} alt='' className={styles.cardImage} />
+        <img src={resolvedImageUrl} alt='' className={styles.cardImage} />
         <p className={styles.description}>{description}</p>
         <div className={styles.hoverScroll}>
           <div className={styles.readMoreIndicator}>
@@ -60,7 +68,18 @@ const Card = ({ imageUrl, heading, description, title, date, content,modalIndica
               <span>{date}</span>
             </div>
             <div className={styles.modalFooter}>
-              {/* Social icons can be uncommented and used here */}
+              {projectUrl && (
+                <a
+                  href={projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.projectLink}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <FontAwesomeIcon icon={faExternalLink} />
+                  <span>Visit Project</span>
+                </a>
+              )}
             </div>
           </div>
         </div>

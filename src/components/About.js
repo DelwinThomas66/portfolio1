@@ -3,17 +3,13 @@
 import React from "react";
 import styles from "./About.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faFire,
-  faPlay,
-} from "@fortawesome/free-solid-svg-icons";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const About = () => {
   const downloadCV = () => {
     const link = document.createElement("a");
-    link.href = process.env.PUBLIC_URL + "/Delwin_Thomas_cv_2024JULY.pdf";
-    link.download = "/Delwin_Thomas_cv_2024JULY.pdf";
+    link.href = process.env.PUBLIC_URL + "/Delwin_Thomas_2026.pdf";
+    link.download = "Delwin_Thomas_2026.pdf";
     link.click();
   };
   function calculateAge(dobString) {
