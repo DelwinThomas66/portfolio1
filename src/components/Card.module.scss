@@ -40,17 +40,6 @@
     border-top-right-radius: 10px; /* Optional: match the card's border-radius */
     margin-bottom: 16px; /* Space between the image and the description */
   }
-  .cardImage::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
-    border-top-left-radius: 10px; /* Optional: match the card's border-radius */
-    border-top-right-radius: 10px; /* Optional: match the card's border-radius */
-  }
   .modalImage {
     width: 100%; /* Make the image full width */
     height: auto; /* Maintain the aspect ratio */

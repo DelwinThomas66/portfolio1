@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="CRM to Dashboard Migration - JODO thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050607"/>
+      <stop offset="0.55" stop-color="#0D0F12"/>
+      <stop offset="1" stop-color="#15181C"/>
+    </linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+    </pattern>
+    <filter id="noise" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.10 0"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <rect width="1200" height="675" filter="url(#noise)" opacity="0.55"/>
+
+  <!-- Right UI preview -->
+  <g transform="translate(670 120)" filter="url(#shadow)">
+    <rect x="0" y="0" rx="18" ry="18" width="460" height="390" fill="#0A0B0D" opacity="0.88" stroke="#2B2F35"/>
+
+    <!-- Old CRM (left panel) -->
+    <g transform="translate(22 28)">
+      <rect x="0" y="0" width="190" height="334" rx="16" fill="#07080A" stroke="#1F2328"/>
+      <rect x="18" y="18" width="110" height="10" rx="5" fill="#FFFFFF" opacity="0.55"/>
+      <rect x="18" y="44" width="150" height="10" rx="5" fill="#FFFFFF" opacity="0.18"/>
+      <rect x="18" y="70" width="140" height="10" rx="5" fill="#FFFFFF" opacity="0.18"/>
+      <rect x="18" y="96" width="130" height="10" rx="5" fill="#FFFFFF" opacity="0.18"/>
+      <rect x="18" y="140" width="154" height="72" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <rect x="18" y="226" width="154" height="72" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <text x="18" y="324" fill="#FFFFFF" opacity="0.40" font-size="12" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">Legacy CRM</text>
+    </g>
+
+    <!-- Arrow -->
+    <g transform="translate(222 185)" opacity="0.8">
+      <path d="M0 0 H70" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round"/>
+      <path d="M62 -12 L92 0 L62 12" fill="none" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- New dashboard (right panel) -->
+    <g transform="translate(312 28)">
+      <rect x="0" y="0" width="126" height="334" rx="16" fill="#07080A" stroke="#1F2328"/>
+      <rect x="14" y="18" width="88" height="10" rx="5" fill="#FFFFFF" opacity="0.65"/>
+      <rect x="14" y="52" width="98" height="56" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <rect x="14" y="120" width="98" height="56" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <rect x="14" y="188" width="98" height="56" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <rect x="14" y="256" width="98" height="56" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <text x="14" y="324" fill="#FFFFFF" opacity="0.40" font-size="12" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">Dashboard</text>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(90 190)">
+    <text x="0" y="0" fill="#FFFFFF" font-size="50" font-weight="800"
+      font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+      CRM &#8594; Dashboard Migration
+    </text>
+    <text x="0" y="48" fill="#FFFFFF" opacity="0.72" font-size="22" font-weight="600"
+      font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+      Navigation speed &#8226; Workflow redesign &#8226; JODO
+    </text>
+    <g transform="translate(0 92)">
+      <rect x="0" y="0" rx="16" ry="16" width="140" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="18" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">React</text>
+      <rect x="156" y="0" rx="16" ry="16" width="172" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="174" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">UX</text>
+      <rect x="344" y="0" rx="16" ry="16" width="210" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="362" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">Dashboard</text>
+    </g>
+  </g>
+
+  <rect x="0" y="610" width="1200" height="65" fill="#FFFFFF" opacity="0.03"/>
+</svg>

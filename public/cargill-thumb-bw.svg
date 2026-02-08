@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Cargill Data Management Platform thumbnail">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050607"/>
+      <stop offset="0.6" stop-color="#0E1013"/>
+      <stop offset="1" stop-color="#14171B"/>
+    </linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2"/>
+    </pattern>
+    <filter id="noise" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix"
+        values="1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 0.10 0"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#grid)"/>
+  <rect width="1200" height="675" filter="url(#noise)" opacity="0.55"/>
+
+  <!-- Data table & filters -->
+  <g transform="translate(640 120)" filter="url(#shadow)">
+    <rect x="0" y="0" rx="18" ry="18" width="510" height="390" fill="#0A0B0D" opacity="0.88" stroke="#2B2F35"/>
+
+    <!-- Filters row -->
+    <g transform="translate(26 28)">
+      <rect x="0" y="0" width="140" height="44" rx="14" fill="#07080A" stroke="#2B2F35"/>
+      <rect x="16" y="16" width="88" height="10" rx="5" fill="#FFFFFF" opacity="0.22"/>
+      <rect x="158" y="0" width="140" height="44" rx="14" fill="#07080A" stroke="#2B2F35"/>
+      <rect x="174" y="16" width="92" height="10" rx="5" fill="#FFFFFF" opacity="0.22"/>
+      <rect x="316" y="0" width="168" height="44" rx="14" fill="#0E1013" stroke="#2B2F35"/>
+      <rect x="334" y="16" width="110" height="10" rx="5" fill="#FFFFFF" opacity="0.55"/>
+    </g>
+
+    <!-- Table -->
+    <g transform="translate(26 94)">
+      <rect x="0" y="0" width="458" height="268" rx="16" fill="#07080A" stroke="#1F2328"/>
+      <!-- Header -->
+      <rect x="16" y="18" width="120" height="10" rx="5" fill="#FFFFFF" opacity="0.55"/>
+      <rect x="160" y="18" width="90" height="10" rx="5" fill="#FFFFFF" opacity="0.35"/>
+      <rect x="272" y="18" width="78" height="10" rx="5" fill="#FFFFFF" opacity="0.35"/>
+      <rect x="366" y="18" width="76" height="10" rx="5" fill="#FFFFFF" opacity="0.35"/>
+
+      <!-- Rows -->
+      <g opacity="0.20" fill="#FFFFFF">
+        <rect x="16" y="54" width="426" height="1"/>
+        <rect x="16" y="98" width="426" height="1"/>
+        <rect x="16" y="142" width="426" height="1"/>
+        <rect x="16" y="186" width="426" height="1"/>
+        <rect x="16" y="230" width="426" height="1"/>
+      </g>
+      <g fill="#FFFFFF" opacity="0.18">
+        <rect x="16" y="66" width="140" height="10" rx="5"/>
+        <rect x="160" y="66" width="88" height="10" rx="5"/>
+        <rect x="272" y="66" width="72" height="10" rx="5"/>
+        <rect x="366" y="66" width="68" height="10" rx="5"/>
+      </g>
+      <g fill="#FFFFFF" opacity="0.18">
+        <rect x="16" y="110" width="130" height="10" rx="5"/>
+        <rect x="160" y="110" width="96" height="10" rx="5"/>
+        <rect x="272" y="110" width="82" height="10" rx="5"/>
+        <rect x="366" y="110" width="74" height="10" rx="5"/>
+      </g>
+      <g fill="#FFFFFF" opacity="0.18">
+        <rect x="16" y="154" width="150" height="10" rx="5"/>
+        <rect x="160" y="154" width="84" height="10" rx="5"/>
+        <rect x="272" y="154" width="78" height="10" rx="5"/>
+        <rect x="366" y="154" width="70" height="10" rx="5"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(90 200)">
+    <text x="0" y="0" fill="#FFFFFF" font-size="52" font-weight="800"
+      font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+      Cargill Platform
+    </text>
+    <text x="0" y="48" fill="#FFFFFF" opacity="0.72" font-size="22" font-weight="600"
+      font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">
+      React " Redux " Data handling " UX
+    </text>
+    <g transform="translate(0 92)">
+      <rect x="0" y="0" rx="16" ry="16" width="140" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="18" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">React</text>
+      <rect x="156" y="0" rx="16" ry="16" width="148" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="174" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">Redux</text>
+      <rect x="320" y="0" rx="16" ry="16" width="190" height="38" fill="#0A0B0D" stroke="#2B2F35"/>
+      <text x="338" y="26" fill="#FFFFFF" opacity="0.86" font-size="16" font-weight="700"
+        font-family="Montserrat, Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif">Data</text>
+    </g>
+  </g>
+
+  <rect x="0" y="610" width="1200" height="65" fill="#FFFFFF" opacity="0.03"/>
+</svg>
